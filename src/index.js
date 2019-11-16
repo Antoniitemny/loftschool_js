@@ -1,4 +1,4 @@
-import { SSL_OP_CIPHER_SERVER_PREFERENCE } from "constants";
+import { SSL_OP_CIPHER_SERVER_PREFERENCE } from 'constants';
 
 /* ДЗ 1 - Функции */
 
@@ -15,7 +15,7 @@ import { SSL_OP_CIPHER_SERVER_PREFERENCE } from "constants";
  Другими словами: функция должна возвращать в неизменном виде то, что поступает ей на вход
  */
 function returnFirstArgument(a) {
-  return a;
+    return a;
 }
 
 /*
@@ -33,7 +33,7 @@ function returnFirstArgument(a) {
    sumWithDefaults(10) вернет 110
  */
 function sumWithDefaults(a, b = 100) {
-  return a + b;
+    return a + b;
 }
 /*
  Задание 3:
@@ -44,8 +44,9 @@ function sumWithDefaults(a, b = 100) {
    returnFnResult(() => 'привет') вернет 'привет'
  */
 function returnFnResult(fn) {
-  var result = fn();
-  return result;
+    var result = fn();
+
+    return result;
 }
 
 /*
@@ -63,12 +64,13 @@ function returnFnResult(fn) {
  */
 
 function returnCounter(number = 0) {
-  var count = 1; 
-  function F() {
-    var result = number + count++;
-    return result;
-  }
-  return F;
+    function F() {
+        var result = ++number;
+
+        return result;
+    }
+    
+    return F;
 }
 
 /*
@@ -81,8 +83,9 @@ function returnCounter(number = 0) {
    returnArgumentsArray(1, 2, 3) вернет [1, 2, 3]
  */
 function returnArgumentsArray() {
-  var r = [].slice.call(arguments);
-  return r;
+    var r = [].slice.call(arguments);
+
+    return r;
 }
 
 /*
