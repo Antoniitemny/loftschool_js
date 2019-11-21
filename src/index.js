@@ -7,6 +7,12 @@
  Посмотрите как работает forEach и повторите это поведение для массива, который будет передан в параметре array
  */
 function forEach(array, fn) {
+<<<<<<< Updated upstream
+=======
+    for (let i = 0; i < array.length; i++) {
+        fn(array[i], i, array);
+    }
+>>>>>>> Stashed changes
 }
 
 /*
@@ -15,7 +21,38 @@ function forEach(array, fn) {
  Напишите аналог встроенного метода map для работы с массивами
  Посмотрите как работает map и повторите это поведение для массива, который будет передан в параметре array
  */
+<<<<<<< Updated upstream
 function map(array, fn) {
+=======
+
+/* !!!!
+ var arr = [1,2,3];
+function plus(a){
+  console.log(a);
+a=a+2;
+console.log(a);
+return a;
+}
+function map(array, fn) {
+    console.log(fn);
+    var newArray = [];
+    newArray.push(array.forEach(fn);
+    console.log(newArray);
+}
+map(arr, plus);
+console.log(arr);
+!!!!
+*/
+
+function map(array, fn) {
+    var newArr = [];
+
+    for (let i = 0; i<array.length; i++) {
+        newArr.push(fn(array[i], i, array));
+    }
+
+    return newArr;
+>>>>>>> Stashed changes
 }
 
 /*
@@ -25,6 +62,23 @@ function map(array, fn) {
  Посмотрите как работает reduce и повторите это поведение для массива, который будет передан в параметре array
  */
 function reduce(array, fn, initial) {
+<<<<<<< Updated upstream
+=======
+    var i = 0,
+        result;
+    
+    if (initial == undefined) {
+        result = array[0];
+        i++;
+    } else {
+        result = initial;
+    }
+    for (i; i < array.length; i++) {
+        result = fn(result, array[i], i, array);
+    }
+
+    return result;
+>>>>>>> Stashed changes
 }
 
 /*
@@ -36,6 +90,16 @@ function reduce(array, fn, initial) {
    upperProps({ name: 'Сергей', lastName: 'Петров' }) вернет ['NAME', 'LASTNAME']
  */
 function upperProps(obj) {
+<<<<<<< Updated upstream
+=======
+    var result = [];
+
+    for (var i=0; i<Object.keys(obj).length; i++) {
+        result.push(Object.keys(obj)[i].toUpperCase());
+    }
+    
+    return result;
+>>>>>>> Stashed changes
 }
 
 /*
