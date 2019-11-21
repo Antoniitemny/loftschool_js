@@ -7,12 +7,9 @@
  Посмотрите как работает forEach и повторите это поведение для массива, который будет передан в параметре array
  */
 function forEach(array, fn) {
-<<<<<<< Updated upstream
-=======
     for (let i = 0; i < array.length; i++) {
         fn(array[i], i, array);
     }
->>>>>>> Stashed changes
 }
 
 /*
@@ -21,9 +18,6 @@ function forEach(array, fn) {
  Напишите аналог встроенного метода map для работы с массивами
  Посмотрите как работает map и повторите это поведение для массива, который будет передан в параметре array
  */
-<<<<<<< Updated upstream
-function map(array, fn) {
-=======
 
 /* !!!!
  var arr = [1,2,3];
@@ -52,7 +46,6 @@ function map(array, fn) {
     }
 
     return newArr;
->>>>>>> Stashed changes
 }
 
 /*
@@ -62,8 +55,6 @@ function map(array, fn) {
  Посмотрите как работает reduce и повторите это поведение для массива, который будет передан в параметре array
  */
 function reduce(array, fn, initial) {
-<<<<<<< Updated upstream
-=======
     var i = 0,
         result;
     
@@ -78,7 +69,6 @@ function reduce(array, fn, initial) {
     }
 
     return result;
->>>>>>> Stashed changes
 }
 
 /*
@@ -90,8 +80,6 @@ function reduce(array, fn, initial) {
    upperProps({ name: 'Сергей', lastName: 'Петров' }) вернет ['NAME', 'LASTNAME']
  */
 function upperProps(obj) {
-<<<<<<< Updated upstream
-=======
     var result = [];
 
     for (var i=0; i<Object.keys(obj).length; i++) {
@@ -99,7 +87,6 @@ function upperProps(obj) {
     }
     
     return result;
->>>>>>> Stashed changes
 }
 
 /*
