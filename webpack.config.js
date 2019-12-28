@@ -21,14 +21,6 @@ const conf = {
                loader: 'babel-loader',
                exclude: '/node_modules/'
            },
-           // Правило для инлайнового добавления стилей
-           // {
-           //     test: /\.css$/,
-           //     use: [
-           //         'style-loader',
-           //         'css-loader'
-           //     ]
-           // },
            {
                test: /\.css$/,
                use: ExtractTextPlugin.extract({
