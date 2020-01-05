@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0ca82ede-336a-43bf-a5a3-dc05bae40184&lang=ru_RU"
+  type="text/javascript">
+  </script>
+    <title>{{HtmlWebpackPlugin.options.title}}</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    {{> "./temp/balloon.hbs"}}
+    <div id="map"></div>
+    {{> "./temp/svg.hbs"}}
+    <script src="main.js"></script>
+</body>
+</html>

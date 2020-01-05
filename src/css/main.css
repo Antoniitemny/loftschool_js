@@ -1,0 +1,69 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#map {
+    width: 100%;
+    height: 100%
+}
+
+li {
+    list-style-type: none;
+}
+
+#balloon {
+    display: none;
+    height: 500px;
+    width: 330px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 100;
+}
+
+.header {  
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 8%;
+    background-color: red;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.header__icon, .header__close{
+    fill: white;
+    height: 40%;
+    flex: 0 0 3%;
+}
+
+.header__text {
+    font-size: .85rem;
+    margin: 10px;
+    color: white;
+    flex: 1 0 50%;
+}
+
+.feedbacks {
+    height: 30%;
+    overflow: auto;
+}
+
+.cluster-address {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.cluster-time {
+    font-weight: lighter;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.feedback__name {
+    font-weight: bold;
+}
